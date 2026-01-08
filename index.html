@@ -64,6 +64,31 @@
       letter-spacing: 0.2px;
     }
 
+    /* BUTONLAR – sadece ekleme */
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 12px 0;
+      border-radius: 14px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      background: rgba(255,255,255,0.18);
+      backdrop-filter: blur(10px);
+      transition: all 0.25s ease;
+    }
+
+    .btn:hover {
+      background: rgba(255,255,255,0.28);
+      transform: translateY(-2px);
+    }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -81,37 +106,6 @@
         padding: 36px 28px;
       }
     }
-
-    /* === SADECE BUTON EKLEMESİ === */
-    .question {
-      margin-top: 26px;
-      color: var(--text-main);
-      font-size: 15px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 12px;
-      margin-top: 14px;
-      justify-content: center;
-    }
-
-    .buttons a {
-      flex: 1;
-      text-decoration: none;
-      padding: 12px 0;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.18);
-      color: white;
-      font-size: 14px;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(6px);
-    }
-
-    .buttons a:hover {
-      background: rgba(255,255,255,0.3);
-      transform: translateY(-1px);
-    }
   </style>
 </head>
 
@@ -123,13 +117,12 @@
     <p class="sub">Bazı hisler olduğu yerde kalıyor.</p>
 
     <!-- EKLENEN KISIM -->
-    <div class="question">İlerlemek ister misiniz?</div>
+    <p class="sub" style="margin-top:20px;">İlerlemek ister misiniz?</p>
 
     <div class="buttons">
-      <a href="LINK_BURAYA">Evet</a>
-      <a href="LINK_BURAYA">Evet</a>
+      <a href="https://ORNEK-LINK-1.com" class="btn">Evet</a>
+      <a href="https://ORNEK-LINK-2.com" class="btn">Evet</a>
     </div>
-    <!-- EKLENEN KISIM -->
   </div>
 </body>
 </html>

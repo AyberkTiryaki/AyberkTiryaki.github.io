@@ -4,92 +4,75 @@
   <meta charset="UTF-8">
   <title>Merhaba</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
-    :root {
-      --bg: #0f2027;
-      --bg2: #203a43;
-      --bg3: #2c5364;
-      --card-bg: rgba(255, 255, 255, 0.12);
-      --text-main: #ffffff;
-      --text-sub: rgba(255, 255, 255, 0.75);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, var(--bg), var(--bg2), var(--bg3));
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      overflow: hidden;
+      background: linear-gradient(135deg, #f6f6f6, #eaeaea);
+      font-family: Arial, sans-serif;
     }
-
     .card {
-      backdrop-filter: blur(14px);
-      background: var(--card-bg);
-      border-radius: 24px;
-      padding: 42px 36px;
-      max-width: 340px;
+      background: white;
+      padding: 36px;
+      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-      animation: fadeIn 1.6s ease forwards;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      max-width: 340px;
+      width: 90%;
     }
-
-    .line {
-      width: 40px;
-      height: 2px;
-      background: rgba(255,255,255,0.6);
-      margin: 0 auto 24px auto;
-      border-radius: 2px;
-    }
-
-    p.main {
-      color: var(--text-main);
+    p {
       font-size: 18px;
-      line-height: 1.6;
-      margin: 0 0 14px 0;
-      letter-spacing: 0.3px;
+      color: #333;
+      margin-bottom: 18px;
     }
-
-    p.sub {
-      color: var(--text-sub);
-      font-size: 14px;
-      margin: 0;
-      letter-spacing: 0.2px;
+    .question {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 22px;
     }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
     }
-
-    /* Küçük ekranlar */
-    @media (max-width: 420px) {
-      .card {
-        margin: 0 16px;
-        padding: 36px 28px;
-      }
+    .btn {
+      flex: 1;
+      padding: 14px 0;
+      font-size: 17px;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: white;
+      text-decoration: none;
+      border-radius: 14px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.15s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
-
 <body>
   <div class="card">
-    <div class="line"></div>
     <p class="main">Zaman her şeyi değiştirmiyor.</p>
     <p class="sub">Bazı hisler olduğu yerde kalıyor.</p>
+
+
+    <div class="question">
+      İlerlemek ister misiniz?
+    </div>
+
+    <div class="buttons">
+      <a href="https://vt.tiktok.com/ZS5Qt8eqD/" target="_blank" class="btn">
+        EVET
+      </a>
+      <a href="https://vt.tiktok.com/ZS5Qt8eqD/" target="_blank" class="btn">
+        EVET
+      </a>
+    </div>
   </div>
 </body>
 </html>
